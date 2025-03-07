@@ -1,11 +1,12 @@
 // ECMAScript 5 way of writing functions check-out for the ECMACScript
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
-import SearchIcon from '@mui/icons-material/Search';
+// import SearchIcon from '@mui/icons-material/Search';
+import BackImage from '../assets/images/black-boy-playing-guitar.jpg'
 
 function Landing() {
     return (
-        <>
+        <>  -
             <div>
                 <Navbar />
             </div>
@@ -31,26 +32,27 @@ function Landing() {
             <section className="w-[90%] mx-auto mb-20">
                 <div className="flex flex-col justify-center items-center mb-10 gap-y-2">
                     <h2 className="text-2xl md:text-4xl text-[#9F6F00] font-bold">What do you need to find?</h2>
-                    <div class="border border-[#9F6F00] my-5 w-[10%]"></div>
+                    <div class="border border-[#9F6F00] my-5 w-[10%]"></div> 
+
                 </div>
-                <div className="grid grid-cols-3 grid-rows-3 gap-4">
-                    <div className="bg-red-600 row-start-1 row-end-4">
+                <div className="grid grid-cols-3 grid-rows-3 gap-4 h-[30rem]">
+                    <div className= "row-start-1 row-end-4 bg-[url('./assets/images/black-boy-playing-guitar.jpg')] bg-cover">
                         <h3>01</h3>
                         <p> Lorem ipsum dolor sit amet consectetur</p>
                     </div>
-                    <div className="bg-yellow-600 row-start-1 row-end-3">
+                    <div className="bg-yellow-600 row-start-1 row-end-3 bg-[url('./assets/images/black-boy-playing-guitar.jpg')] bg-cover bg-no-repeat">
                         <h3>02</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quod architecto odio qui sed tempore ex maiores corporis accusantium consequuntur!</p>
                     </div>
-                    <div className="bg-yellow-600">
+                    <div className="bg-yellow-600 bg-[url('./assets/images/girl-smiling.jpg')] bg-cover">
                         <h3>03</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quod architecto odio qui sed tempore ex maiores corporis accusantium consequuntur!</p>
                     </div>
-                    <div className="bg-pink-600 row-start-2 row-end-4">
+                    <div className="bg-pink-600 row-start-2 row-end-4 bg-[url('./assets/images/black-boy-playing-guitar.jpg')] bg-cover">
                         <h3>04</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quod architecto odio qui sed tempore ex maiores corporis accusantium consequuntur!</p>
                     </div>
-                    <div className="bg-pink-600">
+                    <div className="bg-[url('./assets/images/girl-smiling.jpg')] bg-cover">
                         <h3>05</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quod architecto odio qui sed tempore ex maiores corporis accusantium consequuntur!</p>
                     </div>
@@ -63,7 +65,7 @@ function Landing() {
                 </div>
                 <div className="grid grid-cols-3 gap-x-10">
                     <div className="border rounded-t-lg">
-                        image goes Here
+                    <img src={BackImage} class="rounded-t-lg" alt="" />
                         <div className="m-4 bg-white">
                             <div className="text-sm md:text-lg font-semibold" >
                                 <h3>Single Room Contain</h3>
@@ -92,7 +94,7 @@ function Landing() {
                         </div>
                     </div>
                     <div className="border rounded-t-lg">
-                        image goes Here
+                        <img src={BackImage} alt="" class="rounded-t-lg"/>
                         <div className="m-4 bg-white">
                             <div className="text-sm md:text-lg font-semibold" >
                                 <h3>Single Room Contain</h3>
@@ -121,7 +123,7 @@ function Landing() {
                         </div>
                     </div>
                     <div className="border rounded-t-lg">
-                        image goes Here
+                    <img src={BackImage} class="rounded-t-lg" alt="" />
                         <div className="m-4 bg-white">
                             <div className="text-sm md:text-lg font-semibold" >
                                 <h3>Single Room Contain</h3>
